@@ -1,0 +1,16 @@
+[package]
+name = "client"
+version = "0.1.0"
+authors = ["fennsaji <fennsaji@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+# wasm-pack build --target web --out-name wasm --out-dir ./static
+
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+yew = "0.17"
+wasm-bindgen = "0.2.67"
